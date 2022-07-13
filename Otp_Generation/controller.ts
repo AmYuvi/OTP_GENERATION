@@ -2,7 +2,6 @@ import { Otp_Model } from "./model"
 import { PesonalModel } from './model'
 import jwt from "jsonwebtoken"
 import { RequestHandler } from "express"
-import { decode } from "punycode"
 
 export const otpgenerator: RequestHandler = async (req, res) => {
     const number = Number(100000 + Math.random() * 900000)
